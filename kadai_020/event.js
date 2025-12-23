@@ -1,8 +1,8 @@
 const btn = document.getElementById('btn');
 
+const textChange = document.getElementById('text');
 
-  btn.addEventListener('mousedown',() => {
-    const textChange = document.getElementById('text');
-    textChange.innerHTML = 'ボタンをクリックしました';
-  }
+btn.addEventListener('mousedown',() => {
+  textChange.textContent = 'ボタンをクリックしました';
+}
 );
